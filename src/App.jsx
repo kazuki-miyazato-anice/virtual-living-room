@@ -8,6 +8,8 @@ import {
   PerspectiveCamera,
   EnvironmentCube,
   PositionalAudio,
+  useProgress,
+  Loader,
 } from "@react-three/drei"
 import Remo from './Remo'
 import License from "./License"
@@ -188,7 +190,7 @@ export default function App() {
   const remoOnClick = () => play(!isPlaying)
   return (
     <>
-      <Suspense fallback={null}>
+      <Suspense fallback={<Loader />}>
         <Canvas shadows>
           <PerspectiveCamera position={[posX, posY, posZ]} makeDefault />
           <Environment frames={Infinity} resolution={4096} background>
