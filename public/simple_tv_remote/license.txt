@@ -1,0 +1,11 @@
+Model Information:
+* title:	Simple TV Remote
+* source:	https://sketchfab.com/3d-models/simple-tv-remote-52f142c052564d85b6ef21413af34e25
+* author:	Blender3D (https://sketchfab.com/Blender3D)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Simple TV Remote" (https://sketchfab.com/3d-models/simple-tv-remote-52f142c052564d85b6ef21413af34e25) by Blender3D (https://sketchfab.com/Blender3D) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
