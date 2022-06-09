@@ -11,7 +11,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 export default function Remo({ ...props }) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/simple_tv_remote/scene.gltf')
+  const { nodes, materials, animations } = useGLTF('simple_tv_remote/scene.gltf')
   const { actions } = useAnimations(animations, group)
   return (
     <group ref={group} {...props} dispose={null} rotation={[Math.PI / 10, 0, 0]} position={[-30, 0, 128]} scale={0.1}>
@@ -37,4 +37,4 @@ export default function Remo({ ...props }) {
   )
 }
 
-useGLTF.preload('/simple_tv_remote/scene.gltf')
+useGLTF.preload('simple_tv_remote/scene.gltf')

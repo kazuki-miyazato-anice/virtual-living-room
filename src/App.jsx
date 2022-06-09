@@ -22,7 +22,7 @@ function Video({args, position, rotation, isPlaying}) {
     video.muted = true
     video.loop = true
     const source = document.createElement('source')
-    source.src = '/video.mp4'
+    source.src = 'video.mp4'
     source.type = 'video/mp4'
     video.appendChild(source)
     setVideo(video)
@@ -52,7 +52,7 @@ function Video({args, position, rotation, isPlaying}) {
 function Audio({position, isPlaying}) {
   const [buffer, setBuffer] = useState(null)
   const audioLoader = new AudioLoader()
-  const audioPath = '/River%20Meditation.mp3'
+  const audioPath = 'River%20Meditation.mp3'
   const audio = useRef()
   const onLoadBuffer = buffer => {
     setBuffer(buffer)
@@ -192,7 +192,7 @@ export default function App() {
         <Canvas shadows>
           <PerspectiveCamera position={[posX, posY, posZ]} makeDefault />
           <Environment frames={Infinity} resolution={4096} background>
-            <EnvironmentCube near={1} far={1000} files={['/px.jpg', '/nx.jpg', '/py.jpg', '/ny.jpg', '/pz.jpg', '/nz.jpg']} background/>
+            <EnvironmentCube near={1} far={1000} files={['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg']} background/>
             <Video args={[meshW, meshH, 64, 64]} position={[meshPosX, meshPosY, meshPosZ]} rotation={[meshRotX, meshRotY, meshRotZ]} isPlaying={isPlaying} />
           </Environment>
           <Audio position={[meshPosX, meshPosY, meshPosZ]} isPlaying={isPlaying}/>
